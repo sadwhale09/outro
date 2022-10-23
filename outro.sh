@@ -5,10 +5,13 @@ mpv outro.mp3 &
 
 for T in {15..1}
 do
-    echo $T
+    clear
+    figlet $T
     sleep 1
 done
 
-sleep 5
+clear
+figlet POWER OFF
+sleep 1
 
 systemctl suspend
